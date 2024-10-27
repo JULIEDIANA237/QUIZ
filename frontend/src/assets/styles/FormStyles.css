@@ -1,0 +1,47 @@
+/* Style de base du formulaire */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* Styles des boutons */
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.submit-button:hover:enabled {
+  background-color: #45a049;
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

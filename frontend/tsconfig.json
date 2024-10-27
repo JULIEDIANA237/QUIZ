@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                // Target ECMAScript version
+    "module": "ESNext",             // Module system
+    "jsx": "react-jsx",             // Spécifie le support JSX pour React (React 17+)
+    "strict": true,                 // Active les vérifications strictes
+    "esModuleInterop": true,        // Pour compatibilité avec les modules ES
+    "skipLibCheck": true,           // Ignore les vérifications de bibliothèque
+    "forceConsistentCasingInFileNames": true, // Assure une casse cohérente
+    "moduleResolution": "node",     // Résolution des modules compatible Node.js
+    "resolveJsonModule": true,      // Permet l'importation de fichiers JSON
+    "isolatedModules": true         // Vérifie chaque fichier comme un module séparé
+  },
+  "include": [
+    "src"  // Spécifie le dossier source à inclure dans la compilation
+  ]
+}
