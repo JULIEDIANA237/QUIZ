@@ -2,9 +2,10 @@
 
 ## Description
 
-Cette application **Todo List** est une application fullstack avec un front-end et un back-end. Elle permet aux utilisateurs de créer, mettre à jour, supprimer et visualiser des tâches à faire (*todos*). Le projet est basé sur :
+Cette application **Todo List** est une application fullstack avec un front-end et un back-end. 
+Elle permet aux utilisateurs de créer, mettre à jour, supprimer et visualiser des tâches à faire (*todos*). Le projet est basé sur :
 
-- **Frontend** : Un framework JavaScript moderne (React, Vue.js ou Angular).
+- **Frontend** : Un framework JavaScript moderne React.
 - **Backend** : Node.js, Express, Sequelize pour la gestion de la base de données MySQL.
 
 ### Fonctionnalités

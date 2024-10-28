@@ -2,11 +2,13 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
+  
   "scripts": {
-    "": "npx ts-node src/server.ts",
-    "start": "npx ts-node src/server.ts",
-    "dev": "nodemon app.js"
-  },
+  "build": "tsc", 
+  "start": "node dist/server.js", 
+  "dev": "nodemon app.js"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",

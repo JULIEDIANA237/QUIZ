@@ -1,10 +1,10 @@
-// src/pages/HomePage.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Grid, Typography, Box, MenuItem, Select, SelectChangeEvent } from '@mui/material';
 import Button from '../components/common/Button';
 import { useTranslation } from 'react-i18next'; // Importer le hook de traduction
 import { useLanguage } from '../contexts/LanguageContext';
+import i18n from '../i18n'; // Importer i18n directement
 import '../assets/styles/HomePage.css';
 
 const HomePage: React.FC = () => {
@@ -14,6 +14,8 @@ const HomePage: React.FC = () => {
   const changeLanguage = (event: SelectChangeEvent<string>) => {
     const selectedLanguage = event.target.value;
     setLanguage(selectedLanguage);
+    i18n.changeLanguage(selectedLanguage); // Mettre à jour i18n avec la langue choisie
+    localStorage.setItem('selectedLanguage', selectedLanguage); // Stocker la langue dans localStorage
   };
 
   return (
@@ -60,3 +62,4 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+ 
